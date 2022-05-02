@@ -1,0 +1,38 @@
+/* Use 
+display grid
+grid-template-columns
+gird-column-start
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+#header {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: grey;
+    padding: 5px;
+    border: 1px solid darkslategray;
+
+}
+
+.navigation {
+    font-family: Arial;
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto 80%;
+    width: 80%;
+    background-color:lightblue;
+}
+
+#middle-column {
+    display: grid;
+    padding-top: 10px;
+    grid-column-start: 1;
+    background-color: rosybrown;
+    height: 1000px;
+}
