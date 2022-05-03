@@ -13,18 +13,43 @@ gap
 Combine styles from page_1_style and page_2_style
 */
 
-#container {
-    background-color:rosybrown;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+}
+
+#header {
     display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: grey;
+    padding: 5px;
+    border: 1px solid darkslategray;
+
+}
+.navigation {
+    font-family: Arial;
+    text-align: center;
 }
 
 #middle-column {
-    padding: 5px 0;
-    background-color: lightskyblue;
+    padding-top: 10px;
+    background-color: lightblue;
+    height: 1000px;
+}
+
+#container {
+    padding: 5px;
+    gap: 3px; /*Play with this value*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:lightblue;
+
 }
 
 .item {
-    background-color: orange;
     padding: 10px;
+    background-color: orange;
     border: 1px solid black;
+    text-align: center;
 }
