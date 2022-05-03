@@ -1,16 +1,9 @@
-/* Use 
-display grid
-grid-template-columns
-gird-column-start
-*/
-
 *{
     padding: 0;
     margin: 0;
+    box-sizing: none;
 }
-body{
-    background-color:  lightblue;
-}
+
 #header {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -19,23 +12,26 @@ body{
     border: 1px solid darkslategray;
 
 }
-
 .navigation {
     font-family: Arial;
     text-align: center;
 }
 
+/* Use 
+display grid
+grid-template-columns
+gird-column-start
+*/
+
 #container {
     display: grid;
-    grid-template-columns: auto 80%;
-    width: 80%;
-    background-color:lightblue;
+    grid-template-columns: auto auto auto;
+    background-color:rosybrown;
 }
 
 #middle-column {
-    display: grid;
     padding-top: 10px;
     grid-column-start: 1;
-    background-color: rosybrown;
+    background-color: lightblue;
     height: 1000px;
 }
