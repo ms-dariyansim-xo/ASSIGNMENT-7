@@ -1,21 +1,42 @@
-body {
-    background-color: lightblue;
-}
-
-/* Use 
-display grid
-grid-template-columns
-gird-column-start
-gap
-*/
-
 /*
 Use page_1_style as an example for what to do here. You need to add properties
 */
 
+body {
+    background-color: lightblue;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: grey;
+    padding: 5px;
+    border: 1px solid darkslategray;
+
+}
+.navigation {
+    font-family: Arial;
+    text-align: center;
+}
+
+#middle-column {
+    padding-top: 10px;
+    background-color: lightblue;
+    height: 1000px;
+}
+
 #container {
     padding: 5px;
-    gap: 0px; /*Play with this value*/
+    gap: 3px; /*Play with this value*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:lightblue;
 
 }
 
@@ -23,4 +44,6 @@ Use page_1_style as an example for what to do here. You need to add properties
     padding: 10px;
     background-color: orange;
     border: 1px solid black;
+    width: 92%;
+    text-align: center;
 }
