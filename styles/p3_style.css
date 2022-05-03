@@ -12,7 +12,6 @@ gap
 /*
 Combine styles from page_1_style and page_2_style
 */
-
 *{
     padding: 0;
     margin: 0;
@@ -33,20 +32,28 @@ Combine styles from page_1_style and page_2_style
 }
 
 #middle-column {
+
     padding-top: 10px;
-    background-color: lightblue;
-    height: 1000px;
+    height: 10px;
+    gap: 3px;
+    display: grid;
+    grid-column-start: 2;
+    background-color:lightskyblue;
 }
 
 #container {
-    padding: 5px;
-    gap: 3px; /*Play with this value*/
+    background-color:rosybrown;
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color:lightblue;
-
 }
 
+.item-holder {
+    gap: 2px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightskyblue;
+    padding: 5px;
+}
 .item {
     padding: 10px;
     background-color: orange;
